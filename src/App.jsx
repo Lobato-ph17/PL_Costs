@@ -1,9 +1,12 @@
-import React from 'react'
+
 
 const App = () => {
   return (
     <div>
-        <h1>Costs</h1>
+        <ul>
+          <li>Home</li>
+          <li>Contato</li>
+        </ul>
     </div>
   )
 }
