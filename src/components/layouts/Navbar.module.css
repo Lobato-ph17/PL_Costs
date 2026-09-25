@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #222;
+  padding: 1em;
+  border-bottom: 2px solid #111;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.list li a:hover {
+  color: #ffbb11;
+}
+
+.navbar img {
+  max-height: 40px;
+  display: block;
+}
