@@ -18,22 +18,20 @@ const router = createBrowserRouter([
         element:<Home />
       },
       {
-        path: '/company',
+        path: 'company',
         element:<Company />
       },
       {
-        path: '/contact',
+        path: 'contact',
         element:<Contact />
       },
       {
-        path: '/newproject',
+        path: 'newproject',
         element:<NewProject />
       },
     ]
   }
 ])
-
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

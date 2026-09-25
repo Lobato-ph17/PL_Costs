@@ -1,13 +1,19 @@
+import {Outlet} from 'react-router-dom'
+import NavBar from './components/NavBar'
 
+import Container from './components/layouts/Container'
 
 const App = () => {
   return (
     <div>
-        <ul>
-          <li>Home</li>
-          <li>Contato</li>
-        </ul>
+      <Container customClass="min-height">
+        <NavBar />
+        <Outlet />
+      </Container>
+
+      <footer>footer</footer>
     </div>
+    
   )
 }
 
