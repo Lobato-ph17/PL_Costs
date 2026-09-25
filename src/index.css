@@ -14,3 +14,9 @@ html, body, #root {
   height: 100%;
   font-family:"Roboto", sans-serif;;
 }
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
