@@ -1,5 +1,6 @@
 import styles from './Home.module.css'
 import savings from '../../img/Savings.svg'
+import LinkButton from '../layouts/LinkButton'
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
 
       <h1>Bem-Vindo ao <span>PL Costs!</span></h1>
       <p>Comece a gerenciar seus projetos agora mesmo.</p>
-      <a href="">Criar Projeto</a>
+      <LinkButton to="/newproject" text="Criar Projeto"/>
       <img src={savings} alt="logo savings"/>
       
     </section>
