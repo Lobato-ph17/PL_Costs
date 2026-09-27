@@ -12,12 +12,6 @@
     margin-bottom: .5em;
 }
 
-.home_container h1 span{
-    color:#ffbb33;
-    padding: 0.2em;
-    background-color: #222;
-}
-
 .home_container p {
     margin-bottom: 1.5em;
     color: #7b7b7b;
@@ -28,3 +22,10 @@
     margin: 2em 0;
 }
 
+.home_container span {
+  background: linear-gradient(135deg, #ffbb11 0%, #ff8800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  padding: 0 4px;
+}
