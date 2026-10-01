@@ -24,7 +24,7 @@
     },
     {
       "name": "Lobato teste2",
-      "budget": "22222222222",
+      "budget": "222222",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -35,7 +35,7 @@
     },
     {
       "name": "Lobato teste 4",
-      "budget": "22222222222",
+      "budget": "222222",
       "category": {
         "id": "4",
         "name": "Planejamento"
