@@ -38,6 +38,7 @@
     margin-bottom: 1.2em;
     display: inline-block;
     font-family: "Fraunces", serif;
+    cursor: pointer;
 }
 
 .hero_text h1 {
@@ -72,9 +73,7 @@
     align-items: center;
 }
 
-
-
-/* .hero_image {
+.hero_image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -85,27 +84,26 @@
 .hero_image img {
   width: 100%;
   max-width: 380px;
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
-  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 30px rgba(0,0, 0, 0.1));
+  animation: float 2s ease-in-out infinite;
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0px); }
-} */
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(12px);}
+  100% {transform: translateY(0px);}
+}
 
-/* Cards de Features Inferiores */
-/* .features {
+.features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5em;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .feature_card {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #ffbb10 0%, #ff8a04 100%);
   padding: 1.8em;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
@@ -114,30 +112,33 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .feature_card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-7px);
+  box-shadow: 10 10px 15px 15px rgba(0, 0, 0, 0.8);
 }
 
 .feature_icon {
   font-size: 1.8em;
-  color: #ff8800;
+  color: #201d19;
   margin-bottom: 0.6em;
 }
 
 .feature_card h3 {
-  font-size: 1.15em;
-  color: #1e293b;
+  font-size: 1.4em;
+  color: #01050a;
   margin-bottom: 0.4em;
   font-weight: 700;
 }
 
 .feature_card p {
-  font-size: 0.9em;
-  color: #64748b;
+  font-size: 1.1em;
+  color: #000102;
   line-height: 1.5;
+  font-family: "Fraunces", serif;
+
 }
 
 @media (max-width: 868px) {
@@ -154,4 +155,5 @@
   .hero_text p {
     max-width: 100%;
   }
-}  */
+
+}

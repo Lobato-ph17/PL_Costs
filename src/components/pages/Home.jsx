@@ -29,7 +29,7 @@ const Home = () => {
       </div>
 
       <div className={styles.features}>
-        <div className={styles.features_cards}>
+        <div className={styles.feature_card }>
           <FaWallet className={styles.feature_icon}/>
           <h3>Controle do Orçamento</h3>
           <p>Defina metas orçamentárias e acompanhe seus gastos limite a limite.</p>
