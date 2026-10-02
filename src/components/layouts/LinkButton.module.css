@@ -1,13 +1,27 @@
 .btn {
     background-color: #222;
-    color: white;
-    padding: 0.6em 1.2em;
+    color: #ffffff;
+    padding: 0.75em 1.5em;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
     transition: 0.5s;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+
 }
 
 .btn:hover {
-    color: #ffbb33;
-    padding: 0.7em 1.4em;
+    background-color: #ffbb33;
+    color: #0a0701;
+    border-color: #0c0b0a;
+    transform: translateY(-3px);
 }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 187, 51, 0.2);
+} 
