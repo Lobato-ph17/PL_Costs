@@ -9,17 +9,6 @@
       },
       "cost": 0,
       "services": [],
-      "id": 1
-    },
-    {
-      "name": "Lobato teste",
-      "budget": "7000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
       "id": 2
     },
     {
@@ -32,17 +21,6 @@
       "cost": 0,
       "services": [],
       "id": 3
-    },
-    {
-      "name": "Lobato teste 4",
-      "budget": "222222",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "categories": [

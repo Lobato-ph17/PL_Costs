@@ -11,7 +11,7 @@ const Home = () => {
           <div className={styles.hero_text}> 
               <span className={styles.badge}>Gestão de Projetos</span>
               <h1>
-                Bem vindo ao <span>PL Costs</span>
+                Bem vindo ao <span>LD Costs</span>
               </h1>
               <p>
                 Gerencia o orçamento dos seus projetos, acompanhe custos em tempo real e mantenha suas finanças sob controle de forma simples e intuitiva.
