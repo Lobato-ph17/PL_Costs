@@ -60,7 +60,7 @@ const Projects = () => {
         
         {message && <Message type="success" msg={message}/>}
         {projectMessage && <Message type="success" msg={projectMessage}/>}
-        <Container customClass="start">
+        <Container customClass="start" className={styles.projects_wrapper}>
           {projects.length > 0 &&
             projects.map((project) => (
               <ProjectCard 

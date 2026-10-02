@@ -1,10 +1,30 @@
 .project_container {
-    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 2em;
+    width: 100%;
 }
 
 .title_container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
-    gap: 50px;
+    align-items: center;
+    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #d0dae7;
+}
+
+.title_container h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 3em;
+    font-weight: 800;
+    color: #1e293b;
+    position: relative;
+}
+
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.8em;
+    width: 100%;
 }
