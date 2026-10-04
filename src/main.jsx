@@ -9,6 +9,7 @@ import Company from './components/pages/Company.jsx'
 import Contact from './components/pages/Contact.jsx'
 import NewProject from './components/pages/NewProject.jsx'
 import Projects from './components/pages/Projects.jsx'
+import Project from './components/pages/Project.jsx'
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element:<Projects />
+      },
+      {
+        path: 'project/:id',
+        element:<Project />
       },
     ]
   }
