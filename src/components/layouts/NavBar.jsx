@@ -27,6 +27,10 @@ const NavBar = () => {
             </li>
           </ul>
 
+          <Link to="/newproject" className={styles.nav_cta}>
+            Novo Projeto
+          </Link>
+
           </Container>
     </nav>
   )
