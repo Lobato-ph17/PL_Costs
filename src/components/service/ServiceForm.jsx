@@ -6,12 +6,16 @@ import { useState } from 'react'
 
 const ServiceForm = ({handleSubmit, textBtn, projectData}) => {
 
-    function submit() {
+    const [service, setService] = useState({})
 
+    function submit(e) {
+        e.preventDefault()
+        projectData.services.push(service)
+        handleSubmit(projectData)
     }
 
     function handleChange(e) {
-
+        setService({...service, [e.target.name] : e.target.value})
     }
 
   return (
