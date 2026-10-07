@@ -3,6 +3,7 @@ import Container from '../layouts/Container'
 import Loading from '../layouts/Loading'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layouts/Message'
+import ServiceForm from '../service/ServiceForm'
 
 import {useParams} from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -103,8 +104,13 @@ const Project = () => {
                   {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
                 </button>
                 <div className={styles.project_info}>
-                    {showServiceForm &&
-                        <div>Formulário do serviço</div>}  
+                    {showServiceForm && (
+                        <ServiceForm 
+                          handleSubmit={createService}
+                          btnText="Adicionar Serviço"
+                          projectData={project}
+                        />
+                    )}
                 </div>
             </div>    
 
