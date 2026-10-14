@@ -6,6 +6,7 @@ import Loading from '../layouts/Loading'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layouts/Message'
 import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 import {useParams} from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -14,10 +15,12 @@ const Project = () => {
 
   const {id} = useParams()
   const [project, setProject] = useState([]);
+  const [services, setServices] = useState([])
   const [showProjectForm, setShowProjectForm] = useState(false);
   const [showServiceForm, setShowServiceForm] = useState(false);
   const [message, setMessage] = useState()
   const [type, setType] = useState()
+ 
   
   useEffect(() => {
     setTimeout(() => {
@@ -29,6 +32,7 @@ const Project = () => {
     }).then(resp => resp.json())
     .then((data) => {
         setProject(data)
+        setServices(data.services)
     }).catch(err => console.log(err))
     }, 1000)
   }, [id])
@@ -57,6 +61,10 @@ const Project = () => {
         setType('success')
       })
       .catch((err) => console.log(err))
+  }
+
+  function removeService() {
+
   }
 
   function toggleProjectForm() {
@@ -94,6 +102,7 @@ const Project = () => {
         body: JSON.stringify(project)
       }).then((resp) => resp.json())
       .then((data) => {
+        setShowServiceForm(false)
       })
       .catch(err => console.log(err))
   }
@@ -149,7 +158,21 @@ const Project = () => {
 
             <h2>Serviços</h2>          
             <Container customClass='start'>
-                <p>Itens de Seviços</p>
+                {services.length > 0 &&
+                    services.map((service) => (
+                      <ServiceCard 
+                        id={service.id}
+                        name={service.name}
+                        cost={service.cost}
+                        description={service.description}
+                        key={service.id}
+                        handleRemove={removeService}
+                      />
+                    ))
+                }
+                {services.length === 0&& 
+                  <p>Não há serviços cadastrados.</p>
+                }
             </Container>
 
           </Container>
