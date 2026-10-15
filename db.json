@@ -7,21 +7,8 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 700,
-      "services": [
-        {
-          "name": "canetas",
-          "cost": "500",
-          "description": "Comprar canetas",
-          "id": "82ed7b1f-fdc8-4deb-a520-3692c0feea69"
-        },
-        {
-          "name": "lapis",
-          "cost": "200",
-          "description": "comprar lapis",
-          "id": "9e618a3e-1cdf-444c-90cd-1aafc8704294"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 2
     },
     {
